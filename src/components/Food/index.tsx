@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { FiEdit3, FiTrash } from 'react-icons/fi';
+import { FiEdit3, FiTrash, FiArrowDown } from 'react-icons/fi';
 
 import { Container } from './styles';
 
@@ -31,6 +31,7 @@ const Food: React.FC<IProps> = ({
   }
 
   function setEditingFood(): void {
+    handleEditFood(food);
     // TODO - SET THE ID OF THE CURRENT ITEM TO THE EDITING FOOD AND OPEN MODAL
   }
 
